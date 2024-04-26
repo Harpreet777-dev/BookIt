@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookIt - Library Management Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 1em;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 2em auto;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>BookIt - Library Management Chatbot</h1>
+  </header>
+
+  <section>
+    <!-- Login Form -->
+    <form id="loginForm" onsubmit="authenticate(event)">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <script>
+    function authenticate(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get username and password values
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Check if the username and password are valid
+      if (username === 'en21it301046' && password === '12345') {
+        // If valid, redirect to the restricted page
+        window.location.href = 'restricted.html';
+      } else {
+        // If not valid, display an error message
+        alert('Invalid username or password');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
