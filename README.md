@@ -1,4 +1,4 @@
-To use the chatbot you have t enter the username as- "en21it301046" and password as- "12345" .
+To use the chatbot open "index.html" in your browser, you have t0 enter the username as- "en21it301046" and password as- "12345" .
 
 
             
