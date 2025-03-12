@@ -25,8 +25,11 @@ Machine Learning: The chatbot improves its responses over time by learning from 
 **How to Use:**
 
 Open the index.html file in your browser.
+
 Enter the username: en21it301046.
+
 Enter the password: 12345.
+
 Start interacting with the chatbot and access all available services.
 
 **Why Choose This Chatbot?**
